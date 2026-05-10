@@ -17,6 +17,15 @@
   flex-direction: column;
   gap: 16px;
   background-color: #fff;
+
+  cursor: pointer;
+
+  transition: 0.5s;
+}
+
+.diary_list li:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
 }
 
 .diary_list li button {
