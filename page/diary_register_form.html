@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>일기 등록 form</title>
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/diary/diary_register_form.css" />
+  </head>
+  <body>
+    <div class="form_container">
+      <div class="register__diary">
+        <form class="diary_form">
+          <h3>일기 쓰기</h3>
+          <!-- 오늘의 기분 -->
+          <div class="todays_emotion">
+            <legend class="emotion">오늘 기분은 어땟나요?</legend>
+            <div class="select_emoji">
+              <label for="emotion-happy">
+                <input type="radio" name="emotion" value="happy" />행복해요
+              </label>
+              <label for="emotion-sad">
+                <input type="radio" name="emotion" value="sad" />슬퍼요
+              </label>
+              <label for="emotion-surprised">
+                <input type="radio" name="emotion" value="surprised" />놀랐어요
+              </label>
+              <label for="emotion-angry">
+                <input type="radio" name="emotion" value="angry" />화나요
+              </label>
+              <label for="emotion-etc">
+                <input type="radio" name="emotion" value="etc" />기타
+              </label>
+            </div>
+          </div>
+
+          <!-- 일기 내용 -->
+          <div class="diary_content">
+            <div class="diary_content_item">
+              <label for="diary_content_title">제목</label>
+              <input
+                id="diary_content_title"
+                class="diary_title_input"
+                type="text"
+                placeholder="제목을 입력해 주세요"
+              />
+            </div>
+            <div class="diary_content_item">
+              <label for="diary_content_content">내용</label>
+              <textarea
+                name="diary_content_content"
+                id="diary_content_content"
+                class="diary_content_content"
+                placeholder="내용을 입력해 주세요"
+              ></textarea>
+            </div>
+          </div>
+        </form>
+        <div class="button_box">
+          <button class="close">닫기</button>
+          <button type="submit" class="register">등록하기</button>
+        </div>
+      </div>
+    </div>
+    <script src="../js/registerDiary.js"></script>
+  </body>
+</html>
