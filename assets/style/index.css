@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 1168px;
+}
+
+/* 헤더 영역 */
+header {
+  width: 100%;
+  height: 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.header_dark_mode {
+  width: 121px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header_dark_mode p {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.header_dark_mode input {
+  appearance: none;
+
+  width: 40px;
+  height: 24px;
+  background-color: lightgray;
+  border-radius: 20px;
+
+  padding: 2px;
+}
+
+.header_dark_mode input::after {
+  display: block;
+
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+
+  transition: transform 0.3s;
+}
+
+.header_dark_mode input:checked {
+  background-color: #3ad84a;
+}
+
+.header_dark_mode input:checked::after {
+  transform: translateX(80%);
+}
