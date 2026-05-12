@@ -104,3 +104,23 @@ header h1 {
   color: black;
   border-bottom: 3px solid black;
 }
+
+/* 푸터 영역 */
+footer {
+  width: 100%;
+  min-height: 160px;
+  background-color: #f2f2f2;
+  margin: 40px;
+
+  display: flex;
+  justify-content: center;
+}
+
+footer ul {
+  width: 1168px;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
