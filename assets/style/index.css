@@ -1,0 +1,220 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 1168px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* 헤더 영역 */
+header {
+  width: 100%;
+  height: 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.header_dark_mode {
+  width: 121px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header_dark_mode p {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.header_dark_mode input {
+  appearance: none;
+
+  width: 40px;
+  height: 24px;
+  background-color: lightgray;
+  border-radius: 20px;
+
+  padding: 2px;
+}
+
+.header_dark_mode input::after {
+  display: block;
+
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+
+  transition: transform 0.3s;
+}
+
+.header_dark_mode input:checked {
+  background-color: #3ad84a;
+}
+
+.header_dark_mode input:checked::after {
+  transform: translateX(80%);
+}
+
+/* 배너 영역 */
+.banner img {
+  width: 1168px;
+  height: 240px;
+  border-radius: 24px;
+
+  object-fit: cover;
+}
+
+/* 메인콘텐츠 영역 */
+/* 메인콘텐츠 영역 네비게이션 바 */
+.nav_bar {
+  display: flex;
+  gap: 16px;
+}
+
+.nav_bar li {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ababab;
+  padding: 12px 8px;
+  border-bottom: 3px solid white;
+
+  cursor: pointer;
+}
+
+.nav_bar li:hover {
+  font-weight: 700;
+  color: black;
+  border-bottom: 3px solid black;
+}
+
+/* 컨텐츠 보여주는 곳 */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* 다이어리 */
+/* 다이어리 보드 */
+.diary_board {
+  display: flex;
+  justify-content: space-between;
+}
+
+.diary_search {
+  display: flex;
+  gap: 16px;
+}
+
+.diary_search_emoji select {
+  width: 120px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 12px 10px;
+  font-size: 16px;
+}
+
+.diary_search input {
+  width: 320px;
+  height: 48px;
+  border-radius: 100px;
+  border: 1px solid black;
+
+  padding-left: 48px;
+}
+
+.diary_search input::before {
+  background-image: url("../images/search_outline_light_m.svg");
+}
+
+.diary_post button {
+  width: 110px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+.content_diaries {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* 페이지네이션 영역 */
+.content_diaries_pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.content_diaries_pagination button {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 10px;
+  border: none;
+}
+
+/* 앨범 */
+.album_board select {
+  width: 120px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 12px 10px;
+  font-size: 16px;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.album img {
+  width: 640px;
+  height: 640px;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+/* 푸터 영역 */
+footer {
+  width: 100%;
+  height: auto;
+  min-height: 160px;
+  background-color: #f2f2f2;
+  margin: 40px;
+
+  display: flex;
+  justify-content: center;
+}
+
+footer ul {
+  width: 1168px;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
