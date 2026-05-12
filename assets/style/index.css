@@ -105,6 +105,74 @@ header h1 {
   border-bottom: 3px solid black;
 }
 
+/* 컨텐츠 보여주는 곳 */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* 다이어리 보드 */
+.diary_board {
+  display: flex;
+  justify-content: space-between;
+}
+
+.diary_search {
+  display: flex;
+  gap: 16px;
+}
+
+.diary_search_emoji select {
+  width: 120px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 12px 10px;
+}
+
+.diary_search input {
+  width: 320px;
+  height: 48px;
+  border-radius: 100px;
+  border: 1px solid black;
+
+  padding-left: 48px;
+}
+
+.diary_search input::before {
+  background-image: url("../images/search_outline_light_m.svg");
+}
+
+.diary_post button {
+  width: 110px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+.content_diaries {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* 페이지네이션 영역 */
+.content_diaries_pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.content_diaries_pagination button {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 10px;
+  border: none;
+}
+
 /* 푸터 영역 */
 footer {
   width: 100%;
