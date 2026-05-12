@@ -81,3 +81,26 @@ header h1 {
 
   object-fit: cover;
 }
+
+/* 메인콘텐츠 영역 */
+/* 메인콘텐츠 영역 네비게이션 바 */
+.nav_bar {
+  display: flex;
+  gap: 16px;
+}
+
+.nav_bar li {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ababab;
+  padding: 12px 8px;
+  border-bottom: 3px solid white;
+
+  cursor: pointer;
+}
+
+.nav_bar li:hover {
+  font-weight: 700;
+  color: black;
+  border-bottom: 3px solid black;
+}
